@@ -19,15 +19,38 @@ function setup() {
   b2.position(100, 200);
   b2.mousePressed(mul);
   
+  b3 = createButton("Subtract");
+  b3.position(200, 200);
+  b3.mousePressed(sub);
+  
+  b4 = createButton("Divide");
+  b4.position(300, 200);
+  b4.mousePressed(division);
   
   textAlign(CENTER);
   textSize(15);
 }
 
 function draw() {
-  background(200,10,200)
-  text("Number 1",70,50)
-  text("Number 2",270,50)
+  background(200,10,200);
+  text("Number 1",70,50);
+  text("Number 2",270,50);
   
 
+}
+
+function add() {
+  console.log(n1+n2);
+}
+
+function sub() {
+  console.log(n1-n2);
+}
+
+function mul() {
+  console.log(n1*n2);
+}
+
+function division() {
+  console.log(n1/n2);
 }
